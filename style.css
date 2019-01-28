@@ -225,6 +225,21 @@ html{
   font-size: 21px;
 }
 
+.readmore {
+  display: inline-block;
+  text-decoration:none;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 1px;
+  padding: 6px 12px;
+}
+
+.readmore:hover{
+  z-index: 100;
+  cursor: pointer;
+  border-color: rgb(111 169 221);
+  background-color: rgb(111 169 221);
+}
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -263,7 +278,7 @@ html{
     display: block;
     position: absolute;
     bottom: 60px;
-    left: 20px;
+    left: 18px;
     width: 100%;
     text-align: left;
     opacity: 0;
@@ -278,8 +293,8 @@ html{
 
   font-family: century-gothic, sans-serif;
 
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 48px;
+  font-weight: 100;
 
   letter-spacing:1pt;
 }
@@ -360,22 +375,6 @@ html{
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s;
-}
-
-.readmore {
-  display: inline-block;
-  text-decoration:none;
-  text-transform: uppercase;
-  border-style: solid;
-  border-width: 1px;
-  padding: 6px 12px;
-}
-
-.readmore:hover{
-  z-index: 100;
-  cursor: pointer;
-  border-color: rgb(111 169 221);
-  background-color: rgb(111 169 221);
 }
 
 /* Animation for the slideshow images */
