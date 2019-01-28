@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {
@@ -45,8 +52,8 @@ body, html {
   min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 /*
@@ -61,62 +68,145 @@ body, html {
 
 
 <body>
+
+  <script>
+  AOS.init();
+  </script>
+
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
 
     </a>
-    <a href="#home"> <img src="img/logoS.png" alt="logo" class="logo w3-left">
+    <a href="#home"> <img src="img/logoS.png" alt="logo" class="logo left">
     </a>
     <a href="#home" class="logoname" style="text-decoration:none;">DINGWEN SUN
     </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-folder"></i> PORTFOLIO</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#contact" class="bar-item button hide-small right"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#portfolio" class="bar-item button hide-small right"><i class="fa fa-folder"></i> PORTFOLIO</a>
+    <a href="#about" class="bar-item button hide-small right"><i class="fa fa-user"></i> ABOUT</a>
 <!--
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="#" class="bar-item button hide-small right hover-red">
       <i class="fa fa-search"></i>
     </a>
 -->
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-right fadewhite">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  <div id="navDemo" class="bar-block hide hide-large hide-medium right fadewhite">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
+<div class="bgimg-1 display-container" id="home">
+
   <ul class="cb-slideshow" style="list-style:none;">
-      <li><span>Image 01</span><div><h3> STARDUST</h3></div></li>
-      <li><span>Image 02</span><div><h3> 15 WAYS EXHIBITION </h3></div></li>
-      <li><span>Image 03</span><div><h3> 20 YEARS OF CHAIR</h3></div></li>
-      <li><span>Image 04</span><div><h3> PWC LANDFILL</h3></div></li>
-      <li><span>Image 05</span><div><h3> RAINBOW CHURCH </h3></div></li>
-      <li><span>Image 06</span><div><h3> SEASONS </h3></div></li>
+      <li><span>Image 01</span><div><h3> STARDUST</h3><a href="#" class="readmore">Read More</a></div></li>
+      <li><span>Image 02</span><div><h3> 15 WAYS EXHIBITION </h3><a href="#" class="readmore">Read More</a></div></li>
+      <li><span>Image 03</span><div><h3> 20 YEARS OF CHAIR</h3><a href="#" class="readmore">Read More</a></div></li>
+      <li><span>Image 04</span><div><h3> PWC LANDFILL</h3><a href="#" class="readmore">Read More</a></div></li>
+      <li><span>Image 05</span><div><h3> RAINBOW CHURCH </h3><a href="#" class="readmore">Read More</a></div></li>
+      <li><span>Image 06</span><div><h3> SEASONS </h3><a href="#" class="readmore">Read More</a></div></li>
   </ul>
 </div>
 
+
+<!--
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators" style="list-style:none;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"><span>Image 01</span><div><h3> STARDUST</h3><a href="#" class="readmore">Read More</a></div></li>
+        <li><span>Image 02</span><div><h3> 15 WAYS EXHIBITION </h3><a href="#" class="readmore">Read More</a></div></li>
+        <li><span>Image 03</span><div><h3> 20 YEARS OF CHAIR</h3><a href="#" class="readmore">Read More</a></div></li>
+        <li><span>Image 04</span><div><h3> PWC LANDFILL</h3><a href="#" class="readmore">Read More</a></div></li>
+        <li><span>Image 05</span><div><h3> RAINBOW CHURCH </h3><a href="#" class="readmore">Read More</a></div></li>
+        <li><span>Image 06</span><div><h3> SEASONS </h3><a href="#" class="readmore">Read More</a></div></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="img/11.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
+            </div>
+
+    <div class="item">
+        <img src="img/ENEcover.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+  </div>
+
+    <div class="item">
+       <img src="img/ChairCover.jpg" alt="New York" style="width:100%;">
+       <div class="carousel-caption">
+         <h3>New York</h3>
+         <p>We love the Big Apple!</p>
+       </div>
+  </div>
+    <div class="item">
+       <img src="img/PWCLandfillCover.jpg" alt="New York" style="width:100%;">
+       <div class="carousel-caption">
+         <h3>New York</h3>
+         <p>We love the Big Apple!</p>
+       </div>
+  </div>
+    <div class="item">
+       <img src="img/sectionnorth.jpg" alt="New York" style="width:100%;">
+       <div class="carousel-caption">
+         <h3>New York</h3>
+         <p>We love the Big Apple!</p>
+       </div>
+  </div>
+    <div class="item">
+       <img src="img/PrintCover.jpg" alt="New York" style="width:100%;">
+       <div class="carousel-caption">
+         <h3>New York</h3>
+         <p>We love the Big Apple!</p>
+       </div>
+     </div>
+  </div>
+-->
+
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+</div>
+
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Architecture & Art</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+<div class="content container padding-64" id="about">
+  <h3 class="center" data-aos="fade-up" data-aos-once="false">ABOUT ME</h3>
+  <p class="center" data-aos="fade-up" data-aos-offset="200" data-aos-once="false"><em>Architecture & Art</em></p>
+
+  <p class="padding-64">We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-user margin-right"></i>My Name</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <div class="col m6 hide-small padding-large">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -124,162 +214,165 @@ body, html {
   </div>
 </div>
 <!--
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  <p class="large center padding-16">Im really good at:</p>
+  <p class="wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  <p class="wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  <p class="wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:75%">75%</div>
   </div>
   </div>
 -->
 
-<div class="w3-large w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge"><i class="fa fa-eye"></i></span><br>
+<div class="large row center dark-grey padding-32">
+  <div class="quarter section" data-aos="zoom-out-down">
+    <span class="xlarge"><i class="fa fa-eye"></i></span><br>
     Architecture Visualizations
   </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge"><i class="fa fa-chair"></i></span><br>
+  <div class="quarter section" data-aos="zoom-out-down" data-aos-delay="100">
+    <span class="xlarge"><i class="fa fa-chair"></i></span><br>
     Interior Design
   </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge"><i class="fa fa-camera"></i></span><br>
+  <div class="quarter section" data-aos="zoom-out-down" data-aos-delay="200">
+    <span class="xlarge"><i class="fa fa-camera"></i></span><br>
     Photography
   </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge"><i class="fas fa-palette"></i></span><br>
+  <div class="quarter section" data-aos="zoom-out-down" data-aos-delay="300">
+    <span class="xlarge"><i class="fas fa-palette"></i></span><br>
     CG Art
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide " style="color:black">PORTFOLIO</span>
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide " style="color:white">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-padding-64" id="portfolio">
-  <h3 class="w3-center">ARCHITECTURE</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work.<br> Click on the images to make them bigger</em></p><br>
+<div class="padding-64" id="portfolio">
+  <h3 class="center" data-aos="fade-up" data-aos-once="false">ARCHITECTURE</h3>
+  <p class="center" data-aos="fade-up" data-aos-offset="200" data-aos-once="false"><em>Here are some of my latest works<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img/sample10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="img/sample10.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <div class="col m3">
+      <img src="img/sample3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    <div class="col m3">
+      <img src="img/sample2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    <div class="col m3">
+      <img src="img/sample1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    <div class="col m3">
+      <img src="img/sample8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="col m3">
+      <img src="img/sample13.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    <div class="col m3">
+      <img src="img/sample6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    <div class="col m3">
+      <img src="img/sample7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="col m3">
+      <img src="img/sample11.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="col m3">
+      <img src="img/sample4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="col m3">
+      <img src="img/sample5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/sample9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="col m3">
+      <img src="img/sample9.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
 
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
 
     </div>
   </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
   </div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide" style="color:white">CONTACT</span>
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide" style="color:white">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">NICE TO MEET YOU!</h3>
-  <p class="w3-center"><em>I'd love your feedback</em></p>
+<div >
+<div class="content container padding-64" id="contact">
+  <h3 class="center" data-aos="fade-up" data-aos-once="false">NICE TO MEET YOU!</h3>
+  <p class="center" data-aos="fade-up" data-aos-offset="200" data-aos-once="false">
 
-  <div class="w3-row w3-padding-32 w3-section">
+    <em>I'd love your feedback</em></p>
+
+  <div class="row padding-32 section">
 
 
-    <div class="w3-col m4 w3-container w3-center">
-      <img src="img/map.jpg" class="w3-image" style="height:290px">
+    <div class="col m4 container center">
+      <img src="img/map.jpg" class="image" style="height:290px">
     </div>
 
-    <div class="w3-col m8 w3-panel">
+    <div class="col m8 panel">
 
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Providnece, RI, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>+01 (540)553-6686<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>dsun01@risd.edu<br>
+      <div class="large margin-bottom">
+        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Providnece, RI, US<br>
+        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i>+01 (540)553-6686<br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i>dsun01@risd.edu<br>
       </div>
 
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
       <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
 
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
           </div>
 
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Email" required name="Email">
           </div>
 
-          <div class="w3-col">
-            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <div class="col">
+            <input class="input border" type="text" placeholder="Message" required name="Message" style>
           </div>
 
-          <button class="w3-button w3-right w3-section blue" type="submit">
+          <button class="button right border section hoverblue" type="submit">
             SEND MESSAGE
           </button>
 
@@ -291,18 +384,22 @@ body, html {
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity" style="width:100%; bottom:0;">
+<footer class="center black padding-64 opacity" style="width:100%; bottom:0;">
 
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="button light-grey center">
+    <i class="fas fa-arrow-up"></i> Back To Top</a>
 
-  <div class="w3-xlarge w3-section">
-    <i class="fab fa-instagram w3-hover-opacity"></i>
-    <i class="fab fa-pinterest-square w3-hover-opacity"></i>
-    <i class="fab fa-linkedin w3-hover-opacity"></i>
-    <i class="fab fa-facebook w3-hover-opacity"></i>
+  <div class="xlarge section">
+    <a href="https://www.linkedin.com/in/dingwen-sun-01640aba" style="text-decoration:none;" target="_blank" >
+      <i class="fab fa-linkedin bluehover"></i> </a>
+    <a href="https://www.instagram.com/neptunesteven/" style="text-decoration:none;" target="_blank" >
+      <i class="fab fa-instagram bluehover"></i> </a>
+    <a href="https://www.pinterest.com/sdingwen/" style="text-decoration:none;" target="_blank" >
+      <i class="fab fa-pinterest-square bluehover"></i> </a>
+    <a href="https://www.facebook.com/people/Sun-Dingwen/100005883007155/" target="_blank"> <i class="fab fa-facebook bluehover"></i> </a>
   </div>
 
-  <p>2019 Dingwen Sun &copy;</p>
+  <p class="padding-16">&copy; 2019 Dingwen Sun, All Rights Reserved</p>
 
 </footer>
 
@@ -323,19 +420,19 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "bar" + " card" + " animate-top" + " white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" card animate-top white", "");
     }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" show", "");
     }
 }
 </script>
