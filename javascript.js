@@ -230,3 +230,6 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+$(window).on('scroll', _.debounce(setProperty, 500));
+$(window).on('resize', _.debounce(setProperty, 500));
