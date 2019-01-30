@@ -44,8 +44,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .table td,.table th,.table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
 
-html{
+html,body{
    padding: env(safe-area-inset);
+   height:100%;
 }
 
 #home {
@@ -299,9 +300,11 @@ body {
   overflow: hidden;
   position: relative;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
   z-index: 1;
   margin: 0;
-  vertical-align: baseline;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .slideshow .slideshow-inner {
   position: absolute;
