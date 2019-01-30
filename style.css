@@ -262,11 +262,12 @@ body {
   background: transparent;
   border: 1px solid #e1e1e1;
   font: 12px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   text-align: center;
   text-indent: 2px;
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .btn::before {
   content: "";
@@ -293,7 +294,6 @@ body {
   background-color: rgb(111 169 221);
   transition: color 0.1s linear 0s;
 }
-
 
 .slideshow {
   overflow: hidden;
@@ -336,11 +336,11 @@ body {
   opacity: 1;
 }
 .slideshow .slide .caption {
-  padding: 0 100px;
+  padding: 0 25px;
 }
 .slideshow .slide .image-container {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -353,7 +353,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -367,37 +367,38 @@ body {
 }
 .slideshow .slide-content {
   position: absolute;
-  bottom: 6vh;
+  bottom: 8vh;
   margin: 0;
   width: 100%;
   z-index: 2;
   color: #fff;
   text-align: left;
   display: flex;
-  align-items: center;
 }
 .slideshow .slide .title {
-  margin: 0 auto 15;
+  margin:0;
+  padding: 0;
   max-width: 1000px;
   font: 300 36px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .slideshow .slide .text {
-  margin: 0 1px;
+  margin: 0 1.5px;
   max-width: 1000px;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 .slideshow .slide .btn {
-  margin: 0;
+  margin: 2px;
 }
 .slideshow .slide .btn::before {
   background: #fff;
 }
 .slideshow .pagination {
   position: absolute;
-  bottom: 25px;
+  bottom: 3vh;
   left: 0;
   width: 100%;
   height: 12px;
@@ -424,8 +425,8 @@ body {
   position: absolute;
   top: 0px;
   left: 5px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.5);
   transition: background 0.2s ease;
@@ -441,7 +442,7 @@ body {
 }
 .slideshow .arrows .arrow {
   margin: -33px 0 0;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   top: 50%;
   cursor: pointer;
