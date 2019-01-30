@@ -249,8 +249,7 @@ html{
 }
 
 body {
-  font: 14px/2 "Open sans",sans-serif;
-  letter-spacing: 0.05em;
+  vertical-align: baseline;
 }
 
 .btn {
@@ -296,11 +295,13 @@ body {
 }
 
 .slideshow {
-  display: flex;
+  display: block;
   overflow: hidden;
   position: relative;
   height: 100vh;
   z-index: 1;
+  margin: 0;
+  vertical-align: baseline;
 }
 .slideshow .slideshow-inner {
   position: absolute;
@@ -387,6 +388,7 @@ body {
   max-width: 1000px;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .slideshow .slide .btn {
