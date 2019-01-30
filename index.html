@@ -2,9 +2,8 @@
 <html>
 <title>Dingwen Sun</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<link rel="stylesheet" href="reset.css" media="screen" type="text/css">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" media="screen" type="text/css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -52,14 +51,14 @@ body, html {
 .hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-/*
-@media only screen and (max-device-width: 1600px) {
+
+@media only screen and (max-device-width: 650px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
   }
-  */
 }
+
 </style>
 
 
@@ -101,19 +100,161 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 display-container" id="home">
 
-  <ul class="cb-slideshow" style="list-style:none;">
-      <li><span>Image 01</span><div><h3> STARDUST</h3><a href="#" class="readmore">Read More</a></div></li>
-      <li><span>Image 02</span><div><h3> 15 WAYS EXHIBITION </h3><a href="#" class="readmore">Read More</a></div></li>
-      <li><span>Image 03</span><div><h3> 20 YEARS OF CHAIR</h3><a href="#" class="readmore">Read More</a></div></li>
-      <li><span>Image 04</span><div><h3> PWC LANDFILL</h3><a href="#" class="readmore">Read More</a></div></li>
-      <li><span>Image 05</span><div><h3> RAINBOW CHURCH </h3><a href="#" class="readmore">Read More</a></div></li>
-      <li><span>Image 06</span><div><h3> SEASONS </h3><a href="#" class="readmore">Read More</a></div></li>
-  </ul>
-</div>
+
+    <main class="main-content">
+    <section class="slideshow">
+      <div class="slideshow-inner">
+
+        <div class="slides">
+          <div class="slide is-active ">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Slide title 1</div>
+                <div class="text">
+                  <p>Slide description 1</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/coverPWC.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Slide title 2</div>
+                <div class="text">
+                  <p>Slide description 2</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/coverUB.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">PWC Landfill</div>
+                <div class="text">
+                  <p>2017 Prince William County</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/coverRainbow.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Slide title 3.5</div>
+                <div class="text">
+                  <p>Slide description 3.5</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/CoverENE.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Slide title 3.5</div>
+                <div class="text">
+                  <p>Slide description 3.5</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/coverChair.jpg" alt="" class="image" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Slide title 4</div>
+                <div class="text">
+                  <p>Slide description 4</p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/coverStardust.jpg" alt="" class="image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <div class="item is-active">
+            <span class="icon">1</span>
+          </div>
+          <div class="item">
+            <span class="icon">2</span>
+          </div>
+          <div class="item">
+            <span class="icon">3</span>
+          </div>
+          <div class="item">
+            <span class="icon">4</span>
+          </div>
+          <div class="item">
+            <span class="icon">5</span>
+          </div>
+          <div class="item">
+            <span class="icon">6</span>
+          </div>
+
+        </div>
+
+
+        <div class="arrows">
+          <div class="arrow prev">
+            <span class="svg svg-arrow-left">
+              <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+          <div class="arrow next">
+            <span class="svg svg-arrow-right">
+              <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
 </div>
 
 <!-- Container (About Section) -->
-<div class="content container padding-64" id="about">
+<section class="content container padding-64" id="about">
   <h3 class="center" data-aos="fade-up" data-aos-once="false">ABOUT ME</h3>
   <p class="center" data-aos="fade-up" data-aos-offset="200" data-aos-once="false"><em>Architecture & Art</em></p>
 
@@ -124,7 +265,7 @@ body, html {
   <div class="row">
     <div class="col m6 center padding-large">
       <p><b><i class="fa fa-user margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -134,7 +275,7 @@ body, html {
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
-</div>
+</section>
 <!--
   <p class="large center padding-16">Im really good at:</p>
   <p class="wide"><i class="fa fa-camera"></i>Photography</p>
@@ -152,7 +293,7 @@ body, html {
   </div>
 -->
 
-<div class="large row center dark-grey padding-32">
+<section class="large row center dark-grey padding-32">
   <div class="quarter section" data-aos="zoom-out-down">
     <span class="xlarge"><i class="fa fa-eye"></i></span><br>
     Architecture Visualizations
@@ -169,7 +310,7 @@ body, html {
     <span class="xlarge"><i class="fas fa-palette"></i></span><br>
     CG Art
   </div>
-</div>
+</section>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 display-container opacity-min">
@@ -179,7 +320,7 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="padding-64" id="portfolio">
+<section class="padding-64" id="portfolio">
   <h3 class="center" data-aos="fade-up" data-aos-once="false">ARCHITECTURE</h3>
   <p class="center" data-aos="fade-up" data-aos-offset="200" data-aos-once="false"><em>Here are some of my latest works<br> Click on the images to make them bigger</em></p><br>
 
@@ -236,7 +377,7 @@ body, html {
     <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
 
     </div>
-  </div>
+  </section>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="modal black" onclick="this.style.display='none'">
@@ -358,6 +499,11 @@ function toggleFunction() {
     }
 }
 </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+  <script  src="javascript.js"></script>
 
 </body>
 </html>
