@@ -87,11 +87,12 @@ html,body{
 
 .button:hover{
   color: white;
-  background: rgb(111 169 221)}
+  background: rgb(111, 169, 221)}
 
+/*
 .disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
 .btn.disabled:hover,.btn:disabled:hover{box-shadow:none}
-
+*/
 
 .badge,.tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.badge{border-radius:50%}
 .ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ul li:last-child{border-bottom:none}
@@ -190,16 +191,16 @@ html,body{
 
 .blue{
   color: white;
-  background-color: rgb(111 169 221);
+  background-color: rgb(111, 169, 221);
 }
 
 .hoverblue:hover {
   color: white;
-  background-color: rgb(111 169 221);
+  background-color: rgb(111, 169, 221);
 }
 
 .bluehover:hover {
-  color: rgb(111 169 221);
+  color: rgb(111, 169, 221);
 }
 
 
@@ -237,8 +238,8 @@ html,body{
 .readmore:hover{
   z-index: 100;
   cursor: pointer;
-  border-color: rgb(111 169 221);
-  background-color: rgb(111 169 221);
+  border-color: rgb(111, 169, 221);
+  background-color: rgb(111, 169, 221);
 }
 
 body {
@@ -282,8 +283,8 @@ body {
   z-index: 2;
 }
 .btn:hover {
-  border-color: rgb(111 169 221);
-  background-color: rgb(111 169 221);
+  border-color: rgb(111, 169, 221);
+  background-color: rgb(111, 169, 221);
   transition: color 0.1s linear 0s;
 }
 
@@ -432,9 +433,10 @@ body {
   background: #fff;
   z-index: 2;
   transition: width 0.2s ease;
+  background: rgb(111, 169, 221);
 }
 .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
-  background-color: rgb(111 169 221);
+  background-color: rgb(111, 169, 221);
 }
 .slideshow .arrows .arrow {
   margin: -33px 0 0;
