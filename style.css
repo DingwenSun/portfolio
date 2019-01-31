@@ -84,14 +84,6 @@ html,body{
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
-.btn,.button{
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none
-}
 
 .button:hover{
   color: white;
@@ -472,6 +464,21 @@ body {
   fill: #fff;
   transition: left 0.2s ease;
 }
+
+
+
+input,
+.pagination,
+.btn,
+.button,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
 
 
 @media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3{width:33.33%}.quarter{width:49.99%}.col.m4,.third{width:33.33333%}
