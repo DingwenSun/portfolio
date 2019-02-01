@@ -467,7 +467,15 @@ body {
   transition: left 0.2s ease;
 }
 
+.stroke
+{
+    text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.3),
+    1px -1px 0 rgba(0,0,0,0.3),
+    -1px 1px 0 rgba(0,0,0,0.3),
+    1px 1px 0 rgba(0,0,0,0.3);
 
+}
 
 input,
 .pagination,
