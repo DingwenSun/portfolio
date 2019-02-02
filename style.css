@@ -78,6 +78,7 @@ html,body{
   cursor:pointer;
   white-space:nowrap;
   font-size: 1.1em;
+  letter-spacing: 1px;
 }
 
 .btn:hover{
