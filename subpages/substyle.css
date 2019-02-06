@@ -1,0 +1,80 @@
+
+
+body,html {
+  max-width: 100vw;
+  max-height: 100vh;
+  line-height: 1.8;
+  font-family: "Lato", sans-serif;
+}
+
+#examples{
+	overflow: hidden;
+}
+
+.zoom:hover {
+  cursor: pointer;
+}
+
+.description {
+  position: absolute;
+  margin: 0 12px 0 12px;
+  top:calc(70vh + 60px);
+  max-width: 35vw;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+
+.gallery{
+  position: absolute;
+	overflow: auto;
+	height: 70vh;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  margin-left: 12px;
+  margin-top: 60px;
+}
+
+.showcase .gallery{
+	float: left;
+}
+
+.showcase .horizontal-images.gallery{
+	width: 100%;
+}
+
+.showcase .horizontal-images.gallery h2, .showcase .horizontal-images.gallery li img{ height: calc(70vh - 20px); }
+
+.horizontal-images.gallery ul, .vertical-images.gallery ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.horizontal-images.gallery li{
+	margin: 0 6px;
+	float: left;
+}
+
+.horizontal-images.gallery li:first-child{ margin-left: 0; }
+.horizontal-images.gallery li:last-child{ margin-right: 0; }
+
+
+@media (max-width:1204px){
+   .description {
+    position: absolute;
+    margin: 0 12px 0 12px;
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width:650px){
+  .description {
+    position: absolute;
+    margin: 0 12px 0 12px;
+    top:calc(70vh + 60px);
+    max-width: 500px;
+    font-size: 12px;
+    line-height: 15px;
+  }
