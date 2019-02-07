@@ -89,7 +89,7 @@ function slideshowSwitch(slideshow,index,auto){
       left:0
     });
 
-    TweenMax.set(newSlideElements,{y:20,force3D:true});
+    TweenMax.set(newSlideElements,{x:20,force3D:true});
     TweenMax.to(activeSlideImage,1,{
       left:activeSlideImageLeft,
       ease:Power3.easeInOut
@@ -106,7 +106,7 @@ function slideshowSwitch(slideshow,index,auto){
       ease:Power3.easeInOut
     });
 
-    TweenMax.staggerFromTo(newSlideElements,0.8,{alpha:0,y:60},{alpha:1,y:0,ease:Power3.easeOut,force3D:true,delay:0.6},0.1,function(){
+    TweenMax.staggerFromTo(newSlideElements,0.8,{alpha:0,x:-60},{alpha:1,x:0,ease:Power3.easeOut,force3D:true,delay:0.6},0.1,function(){
       newSlide.addClass('is-active').removeClass('is-new');
       activeSlide.removeClass('is-active');
       newSlide.css({
