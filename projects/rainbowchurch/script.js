@@ -24,13 +24,12 @@ function onClick(element) {
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
+    var y = document.getElementById("menu");
     if (x.className.indexOf("show") == -1) {
         x.className += " show";
+        y.className += " open"
     } else {
         x.className = x.className.replace(" show", "");
+        y.className = y.className.replace(" open", "");
     }
 }
-
-$('body').on('click', '.menu', function(){
-  $(this).toggleClass('open');
-});
