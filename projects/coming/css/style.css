@@ -4,11 +4,13 @@ body {
   font-family: "proxima-nova-soft", sans-serif;
   -webkit-user-select: none;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 body .vertical-centered-box {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
 body .vertical-centered-box:after {
@@ -34,6 +36,10 @@ body .vertical-centered-box .content {
   transition: all 0.3s;
 }
 
+a:hover{
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 h3 {
   z-index: 1000;

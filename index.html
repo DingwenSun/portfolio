@@ -76,11 +76,19 @@ body, html {
   <div class="bar" id="myNavbar">
 
     <a class="bar-item button hide-medium hide-large right hoverblue" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i> </a>
+      <div class="menu menu--close1">
+        <div class="menu__icon">
+          <div class="menu__line menu__line--1"></div>
+          <div class="menu__line menu__line--2"></div>
+          <div class="menu__line menu__line--3"></div>
+        </div>
+      </div>
+    </a>
 
 
     <a href="#home" class="bar-item button">
-      <img src="img/logoS.png" alt="logo" class="logo left"> DINGWEN SUN
+      <img src="img/logoS.png" alt="logo" class="logo left">
+      DINGWEN SUN
     </a>
     <a href="#contact" class="bar-item button hide-small right hoverblue">
       <i class="fa fa-envelope"></i> CONTACT</a>
@@ -401,7 +409,9 @@ body, html {
       <img src="img/sample9.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sqaure">
     </div>
 
+    <a href="projects/coming/index.html">
     <button class="button padding-large light-grey hoverblue" style="margin-top:64px">LOAD MORE</button>
+    </a>
 
     </div>
   </section>
@@ -449,7 +459,7 @@ body, html {
 
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
-      <form action="/action_page.php" target="_blank">
+      <form action="mailto:dsun01@risd.edu" method="post" enctype="text/plain">
         <div class="row-padding" style="margin:0 -16px 8px -16px">
 
           <div class="half">
@@ -498,41 +508,11 @@ body, html {
 
 
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "bar" + " card" + " animate-top" + " white";
-    } else {
-        navbar.className = navbar.className.replace(" card animate-top white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-        x.className += " show";
-    } else {
-        x.className = x.className.replace(" show", "");
-    }
-}
-</script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 
-  <script  src="javascript.js"></script>
+<script  src="javascript.js"></script>
 
 </body>
 </html>

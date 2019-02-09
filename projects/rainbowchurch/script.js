@@ -30,3 +30,7 @@ function toggleFunction() {
         x.className = x.className.replace(" show", "");
     }
 }
+
+$('body').on('click', '.menu', function(){
+  $(this).toggleClass('open');
+});
