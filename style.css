@@ -355,7 +355,7 @@ body {
   position: relative;
   background: transparent;
   border: 1px solid #e1e1e1;
-  font: 12px/1.2 "Oswald", sans-serif;
+  font: 12px/1.2 "Helvetica", sans-serif;
   text-align: center;
   text-indent: 2px;
   text-transform: uppercase;
@@ -463,7 +463,7 @@ body {
   margin:0;
   padding: 0;
   max-width: 600px;
-  font: 300 48px/1.2 "Oswald", sans-serif;
+  font: 200 48px/1.2 "Helvetica", sans-serif;
   letter-spacing: 0;
   text-transform: uppercase;
 }
